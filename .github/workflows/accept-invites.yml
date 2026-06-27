@@ -28,7 +28,7 @@ jobs:
 
       - name: Run invite acceptor
         env:
-          MADI_PAT: ${{ secrets.MADI_PAT }}
+          MADII_PAT: ${{ secrets.MADII_PAT }}
         run: python accept_invites.py
       - name: Commit logs
         run: |
