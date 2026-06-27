@@ -4,8 +4,11 @@ on:
   schedule:
     # - cron: "0 3 * * *"   # once daily (3 AM UTC)
     # - cron: "0 15 * * *"  # second run (3 PM UTC)
-    - cron: "0 */8 * * *"  
+    - cron: "0 */6 * * *"  
   workflow_dispatch:      # allows manual trigger with button
+
+permissions:
+  contents: write
 
 jobs:
   accept-invites:
