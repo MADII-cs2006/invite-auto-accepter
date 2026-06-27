@@ -2,7 +2,7 @@ import requests
 import os
 from datetime import datetime, timezone
 
-TOKEN = os.getenv("MADI_PAT")
+TOKEN = os.getenv("MADII_PAT")
 
 headers = {
     "Authorization": f"token {TOKEN}",
