@@ -62,7 +62,7 @@ with open(log_file, "a") as f:
     
         # 🔍 Apply filter
         if created_at < CUTOFF_DATE:
-            f.write(f"Skipped (old): {repo_name} | Created at: {created_at_str}")
+            f.write(f"\nSkipped (old): {repo_name} | Created at: {created_at_str}")
             skipped_count += 1
             continue
     
